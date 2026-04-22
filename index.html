@@ -35,8 +35,8 @@
   .nav-cta { color: #141414; text-decoration: none; font-size: 13.5px; border-bottom: 1px solid #141414; padding-bottom: 1px; }
 
   /* Hero */
-  .hero { padding: 140px 56px 120px; text-align: center; border-bottom: 1px solid rgba(20,20,20,0.10); }
-  .hero-avatar { width: 140px; height: 140px; border-radius: 50%; background: linear-gradient(135deg, #faf8f3, #e8e4dc); border: 1px solid rgba(20,20,20,0.10); display: flex; align-items: center; justify-content: center; font-family: "Newsreader", Georgia, serif; font-size: 48px; font-weight: 300; color: #1a3a2e; letter-spacing: -1px; margin: 0 auto 40px; }
+  .hero { padding: 60px 56px 120px; text-align: center; border-bottom: 1px solid rgba(20,20,20,0.10); }
+  .hero-avatar { width: 160px; height: 160px; border-radius: 50%; object-fit: cover; display: block; margin: 0 auto 40px; border: 1px solid rgba(20,20,20,0.10); }
   .hero-inner { max-width: 860px; margin: 0 auto; }
   .eyebrow { font-family: "JetBrains Mono", ui-monospace, monospace; font-size: 12px; letter-spacing: 1.2px; text-transform: uppercase; color: #8a8a82; margin-bottom: 36px; }
   h1 { font-family: "Newsreader", Georgia, serif; font-size: clamp(56px, 11vw, 132px); font-weight: 300; line-height: 0.92; letter-spacing: -4px; margin: 0; font-optical-sizing: auto; }
@@ -82,7 +82,7 @@
   .early { margin-top: 8px; padding-top: 36px; border-top: 1px solid rgba(20,20,20,0.10); display: grid; grid-template-columns: 160px 1fr; gap: 40px; }
   .early-label { font-family: "JetBrains Mono", ui-monospace, monospace; font-size: 12px; color: #8a8a82; letter-spacing: 0.8px; text-transform: uppercase; }
   .early-row { display: flex; justify-content: space-between; font-size: 15px; padding-bottom: 8px; border-bottom: 1px dotted rgba(20,20,20,0.10); }
-  .early-row .role { color: #8a8a82; }
+  .early-row .early-role { color: #8a8a82; font-size: 15px; font-family: "Inter Tight", sans-serif; font-weight: 400; letter-spacing: 0; }
 
   /* Competencies */
   .comps { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px 40px; }
@@ -166,7 +166,7 @@
 
 <section class="hero">
   <div class="hero-inner">
-    <div class="hero-avatar" aria-label="Portrait placeholder">HR</div>
+    <img class="hero-avatar" src="portrait.jpg" alt="Hemant Rathore" />
     <div class="eyebrow">Engineering leadership · Dubai, UAE</div>
     <h1 style="font-size: 64px">Hemant Rathore</h1>
     <p class="lede" style="font-size: 24px">Head of Engineering<br/>Data, AI &amp; Platform Transformation Leader</p>
@@ -174,7 +174,7 @@
     <div class="hero-meta">
       <span>Available for leadership roles</span>
       <span class="dot">·</span>
-      <span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="442c2129252a306a3625302c2b3621042329252d286a272b29">[email&#160;protected]</a></span>
+      <span>hemant.rathore@gmail.com</span>
     </div>
   </div>
 </section>
@@ -278,9 +278,9 @@
       <div class="early">
         <div class="early-label">Early career</div>
         <div style="display:grid;gap:6px;">
-          <div class="early-row"><span style="font-weight:500;">Alethea Communications</span><span class="role">Founding Engineer</span></div>
-          <div class="early-row"><span style="font-weight:500;">Anite (now Keysight Technologies)</span><span class="role">Lead Engineer</span></div>
-          <div class="early-row"><span style="font-weight:500;">Ashley Laurent (acquired by Cisco)</span><span class="role">Software Engineer</span></div>
+          <div class="early-row"><span style="font-weight:500;">Alethea Communications</span><span class="early-role">Founding Engineer</span></div>
+          <div class="early-row"><span style="font-weight:500;">Anite (now Keysight Technologies)</span><span class="early-role">Lead Engineer</span></div>
+          <div class="early-row"><span style="font-weight:500;">Ashley Laurent (acquired by Cisco)</span><span class="early-role">Software Engineer</span></div>
         </div>
       </div>
 
@@ -359,9 +359,9 @@
   </div>
   <div class="sec-body">
     <div class="contact">
-      <a href="/cdn-cgi/l/email-protection#751d1018141b015b0714011d1a0710351218141c195b161a18" class="contact-item">
+      <a href="mailto:hemant.rathore@gmail.com" class="contact-item">
         <div class="contact-label">Email</div>
-        <div class="contact-val"><span class="__cf_email__" data-cfemail="157d7078747b613b6774617d7a6770557278747c793b767a78">[email&#160;protected]</span></div>
+        <div class="contact-val">hemant.rathore@gmail.com</div>
       </a>
       <div class="contact-item">
         <div class="contact-label">Phone</div>
@@ -384,7 +384,7 @@
   <div class="muted">Set in Newsreader &amp; Inter Tight</div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
   document.getElementById('year').textContent = new Date().getFullYear();
 
   // Active-link highlighting on scroll
